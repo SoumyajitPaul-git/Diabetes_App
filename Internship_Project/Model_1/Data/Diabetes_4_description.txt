@@ -1,0 +1,31 @@
+Diabetes Data
+SAS code to access the data using the original data set from Trevor Hastie's LARS software page.
+Proc Means and Proc Print Output when using the above data.
+
+The data from the R package lars. SAS code to access these data. Proc Means and Proc Print Output when using the above data from R. Note that the 10 x variables have been standardized to have mean 0 and squared length = 1 (sum(x^2)=1).
+
+SAS Data set of Hastie's "quadratic model" data64.txt with Y added at the end.
+
+Brief Description
+From Bradley Efron, Trevor Hastie, Iain Johnstone and Robert Tibshirani (2004) "Least Angle Regression," Annals of Statistics (with discussion), 407-499, we have
+
+"Ten baseline variables, age, sex, body mass index, average blood pressure, and six blood serum measurements were obtained for each of n = 442 diabetes patients, as well as the response of interest, a quantitative measure of disease progression one year after baseline."
+
+In the tab delimited file above, the variables are named
+
+AGE SEX BMI BP S1 S2 S3 S4 S5 S6 Y
+whereas, in the R file, they are named
+age sex bmi map tc ldl hdl tch ltg glu y
+In the SAS data set with quadratic variables added, the variables are
+age sex bmi  map  tc  ldl  hdl  tch  ltg  glu
+age2    bmi2 map2 tc2 ldl2 hdl2 tch2 ltg2 glu2
+age_sex age_bmi age_map age_tc  age_ldl age_hdl age_tch age_ltg age_glu
+sex_bmi sex_map sex_tc  sex_ldl sex_hdl sex_tch sex_ltg sex_glu
+bmi_map bmi_tc  bmi_ldl bmi_hdl bmi_tch bmi_ltg bmi_glu
+map_tc  map_ldl map_hdl map_tch map_ltg map_glu
+tc_ldl  tc_hdl  tc_tch  tc_ltg  tc_glu
+ldl_hdl ldl_tch ldl_ltg ldl_glu
+hdl_tch hdl_ltg hdl_glu
+tch_ltg tch_glu
+ltg_glu
+y
