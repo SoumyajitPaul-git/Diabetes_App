@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Diabetes</string>
+    <string name="min">Min</string>
+    <string name="max">Max</string>
+    <string name="previous_avg">Previous Avg</string>
+    <string name="avg">Avg</string>
+    <string name="prior_avg">Prior Avg</string>
+</resources>
