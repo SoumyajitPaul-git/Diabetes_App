@@ -96,7 +96,7 @@
 
         <TextView
             android:id="@+id/subTextView1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="0dp"
             android:text="Sub Text 1"
@@ -104,7 +104,7 @@
 
         <TextView
             android:id="@+id/subTextView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="0dp"
             android:text="Sub Text 2"
