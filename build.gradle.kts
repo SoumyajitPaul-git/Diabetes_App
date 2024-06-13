@@ -4,6 +4,3 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android) apply false
 }
 
-dependencies{
-    classpath 'com.google.gms:google-services:4.3.10'
-}

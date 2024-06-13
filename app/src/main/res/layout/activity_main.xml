@@ -34,7 +34,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="85.6"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView7"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -46,7 +46,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="135.2"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView8"
                 app:layout_constraintStart_toEndOf="@+id/textView6"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:text="119.6"
                 app:layout_constraintEnd_toStartOf="@+id/textView7"
                 app:layout_constraintStart_toEndOf="@+id/textView2"
@@ -71,7 +71,7 @@
                 android:layout_marginTop="16dp"
                 android:gravity="center"
                 android:text="112.4"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -83,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/min"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/textView10"
                 app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -94,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/max"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView9"
                 app:layout_constraintStart_toEndOf="@+id/textView11"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/prior_avg"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView10"
                 app:layout_constraintStart_toEndOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -116,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/avg"
-                android:textSize="10sp"
+                android:textSize="13sp"
                 app:layout_constraintEnd_toStartOf="@+id/textView6"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -126,12 +126,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="est A1C "
-                android:textSize="12sp"
+                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.953" />
+
             <!--                android:textAllCaps="true"--><![CDATA[
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -145,17 +146,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/homepage_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:id="@+id/list"
-android:name="com.example.diabetes.daily_data"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:layout_marginLeft="16dp"
-android:layout_marginRight="16dp"
-app:layoutManager="LinearLayoutManager"
-tools:context=".daily_data"
-tools:listitem="@layout/fragment_daily_data" />
